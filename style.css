@@ -1,26 +1,117 @@
 * {
   padding: 0;
   margin: 0;
-  border: 1px solid gray;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: hsl(0, 0%, 40%)
 }
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: hsl(58, 75%, 92%);
 }
 
 .container {
-  width: 660px;
-  height: 660px;
-  
+  width: 760px;
+  height: 760px;
   display: flex;
-  flex-wrap: wrap;
+  border-left: 1px solid gray;
+  border: 1px solid hsl(0, 0%, 50%);
+  padding: 50px;
+  border-radius: 25px;
+  background-color: hsl(240, 50%, 60%);
+
+}
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-right: 1px solid gray;
 }
 
 .cell {
   flex: 1 1 auto;
   flex-wrap: wrap;
+  flex-grow: 1;
+  border-top: 1px solid gray;
+  background-color: white;
+}
 
+header {
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 50px;
+  color:brown;
+}
+
+nav {
+  display: flex; 
+  justify-content: space-between;
+  width: 800px;
+  margin-bottom: 1.2rem;
+}
+
+#slidebar {
+  
+  
+}
+
+label[for="slidebar"] {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+button {
+  display: block;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 0ch;
+  color: white;
+  background-color: hsl(240, 50%, 60%);
+  font-weight: bold;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  background-color: brown;
+  margin: 10px;
+  width: 250px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 10px;
+  background-color: hsl(0, 0%, 40%);
+  border-radius: 5px
+};
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 10px;
+  background-color: hsl(0, 0%, 40%);
+  border-radius: 5px
+}
+
+.radioButton {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+label {
+  
 }
